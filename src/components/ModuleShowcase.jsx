@@ -48,10 +48,10 @@ export default function ModuleShowcase({ onModuleSelect }) {
             component="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: '1.9rem', sm: '2.5rem', md: '2.75rem' },
+              fontSize: { xs: '1.45rem', sm: '2.2rem', md: '2.6rem' },
               color: '#1E1E24',
               mb: 2,
-              letterSpacing: '-0.02em',
+              lineHeight: 1.3,
             }}
           >
             孩子親手打造，滿滿成就感帶回家
@@ -107,7 +107,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                 <Box
                   component="img"
                   src={moduleAImg}
-                  alt="A 模組 3D列印發光城堡模型、柯基手機座與造型夾"
+                  alt="A 模組 3D列印發光城堡模型、客製化創意手機座與造型夾"
                   sx={{
                     width: '100%',
                     height: '100%',
@@ -149,7 +149,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                 </Box>
               </Box>
 
-              <CardContent sx={{ p: { xs: 3, sm: 3.8 }, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+              <CardContent sx={{ p: { xs: 2.8, sm: 3.8 }, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                 <Typography
                   variant="overline"
                   sx={{ color: '#FF6B35', fontWeight: 800, letterSpacing: '0.06em', fontSize: '0.82rem' }}
@@ -159,13 +159,29 @@ export default function ModuleShowcase({ onModuleSelect }) {
                 <Typography
                   variant="h5"
                   component="h3"
-                  sx={{ fontWeight: 800, color: '#1E1E24', mb: 1.5, fontSize: { xs: '1.25rem', sm: '1.45rem' } }}
+                  sx={{ fontWeight: 800, color: '#1E1E24', mb: 1.2, fontSize: { xs: '1.3rem', sm: '1.45rem' } }}
                 >
                   3D 列印生活設計
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#4A4E69', mb: 2.5, lineHeight: 1.6 }}>
-                  從空間立體觀念起步，學習直覺建模軟體、參數化設計與 3D 列印切片機操作。帶領孩子親手設計屬於自己的日常科技小物！
+                <Typography variant="body2" sx={{ color: '#4A4E69', mb: 2, lineHeight: 1.65 }}>
+                  從空間立體觀念起步，學習直覺圖形化建模軟體、參數化結構與 3D 列印切片機操作。雙師帶領孩子掌握空間思維，將天馬行空的想像透過數位製造真正實體化！
                 </Typography>
+
+                {/* Highlights Box */}
+                <Box sx={{ backgroundColor: '#FFF8F2', borderRadius: '14px', p: 1.8, mb: 2.5, border: '1px solid #FFE6D5' }}>
+                  <Typography variant="caption" sx={{ fontWeight: 800, color: '#FF6B35', display: 'block', mb: 0.8, fontSize: '0.82rem' }}>
+                    💡 核心學習技能亮點：
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55, mb: 0.5 }}>
+                    • <b>立體空間思維</b>：座標系統定位、幾何布林交差集與壁厚支撐概念。
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55, mb: 0.5 }}>
+                    • <b>造型完全自由設計</b>：不限於特定外型！孩子可自由發揮創意（柯基、小貓萌寵、潮流幾何或動漫標誌均可由孩子親自構思建模）。
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55 }}>
+                    • <b>實機切片調校</b>：親手操作專業切片軟體，掌握層高、支撐結構與噴嘴溫控。
+                  </Typography>
+                </Box>
 
                 {/* Checklist */}
                 <Typography variant="subtitle2" sx={{ fontWeight: 800, color: '#1E1E24', mb: 1 }}>
@@ -177,7 +193,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="🏰 發光夢幻城堡模型（內置溫暖 LED 光源夜燈）"
+                      primary="🏰 發光夢幻城堡夜燈模型（內建溫暖 LED 光源夜燈）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>
@@ -186,7 +202,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="🐶 超萌幾何柯基手機座（穩固斜角，追劇網課利器）"
+                      primary="📱 客製化創意造型手機座（外型自由設計，穩固實用追劇利器）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>
@@ -195,7 +211,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="🐾 療癒肉球與小熊造型電線收納夾（生活實用）"
+                      primary="🐾 療癒小動物造型電線收納夾（生活實用小物）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>
@@ -309,13 +325,29 @@ export default function ModuleShowcase({ onModuleSelect }) {
                 <Typography
                   variant="h5"
                   component="h3"
-                  sx={{ fontWeight: 800, color: '#1E1E24', mb: 1.5, fontSize: { xs: '1.25rem', sm: '1.45rem' } }}
+                  sx={{ fontWeight: 800, color: '#1E1E24', mb: 1.2, fontSize: { xs: '1.3rem', sm: '1.45rem' } }}
                 >
                   AI 音樂與 NFC 黑膠盒
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#4A4E69', mb: 2.5, lineHeight: 1.6 }}>
-                  結合最前沿生成式 AI 音樂創作與物聯網感應科技！運用 Suno AI 創作詞曲，再將晶片嵌入自製迷你黑膠，打造可發光播歌的實體留聲機！
+                <Typography variant="body2" sx={{ color: '#4A4E69', mb: 2, lineHeight: 1.65 }}>
+                  結合最前沿生成式 AI 音樂創作與物聯網感應科技！引導孩子運用 Suno AI 創作詞曲，再將音樂寫入客製迷你黑膠，組裝發光留聲機，體驗一嗶即播的軟硬體跨界成就感！
                 </Typography>
+
+                {/* Highlights Box */}
+                <Box sx={{ backgroundColor: '#FFFAF0', borderRadius: '14px', p: 1.8, mb: 2.5, border: '1px solid #FFE8B8' }}>
+                  <Typography variant="caption" sx={{ fontWeight: 800, color: '#D48806', display: 'block', mb: 0.8, fontSize: '0.82rem' }}>
+                    🎵 核心學習技能亮點：
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55, mb: 0.5 }}>
+                    • <b>Suno AI 詞曲靈感探索</b>：啟發孩子文字表達與寫詞能力，體驗 Jazz、Lo-Fi、Pop、搖滾等多元風格與編曲氛圍。
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55, mb: 0.5 }}>
+                    • <b>黑膠唱片封面美學設計</b>：親手自繪黑膠唱片專屬圓標與外包裝，培養數位美學感官。
+                  </Typography>
+                  <Typography variant="caption" sx={{ display: 'block', color: '#4A4E69', lineHeight: 1.55 }}>
+                    • <b>物聯網 NFC 軟硬體整合</b>：學習近場通訊（NFC）原理，將個人專屬雲端音檔燒錄寫入實體唱片晶片。
+                  </Typography>
+                </Box>
 
                 {/* Checklist */}
                 <Typography variant="subtitle2" sx={{ fontWeight: 800, color: '#1E1E24', mb: 1 }}>
@@ -327,7 +359,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="📻 3D 列印發光留聲機（內建復古光圈與微控播放核心）"
+                      primary="📻 3D 列印發光留聲機主機（內建復古光圈與微控播放核心）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>
@@ -336,7 +368,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="🎵 Suno AI 生成個人原創歌曲 + 自繪特色唱片圓標封面"
+                      primary="🎵 專屬原創歌曲 + 自繪特色唱片圓標封面（文藝美感滿分）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>
@@ -345,7 +377,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                       <CheckCircleIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="⚡ NFC 嗶！感應播放黑膠片（2片唱片，放上唱機即刻播歌）"
+                      primary="⚡ NFC 嗶！感應播放黑膠片（2片唱片，放上唱機即刻自動播歌）"
                       primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem', color: '#2B2D42' }}
                     />
                   </ListItem>

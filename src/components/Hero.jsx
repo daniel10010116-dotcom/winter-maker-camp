@@ -246,7 +246,7 @@ export default function Hero({ onCtaClick }) {
                 <Box
                   component="img"
                   src={heroImg}
-                  alt="新星創客冬令營 3D列印城堡、柯基手機座與 NFC 留聲機作品合照"
+                  alt="新星創客冬令營 3D列印城堡、客製造型手機座與 NFC 留聲機作品合照"
                   sx={{
                     width: '100%',
                     height: '100%',
@@ -267,10 +267,10 @@ export default function Hero({ onCtaClick }) {
                     backgroundColor: 'rgba(30, 30, 36, 0.82)',
                     backdropFilter: 'blur(8px)',
                     color: '#FFFFFF',
-                    px: 1.8,
+                    px: { xs: 1.2, sm: 1.8 },
                     py: 0.8,
                     borderRadius: '12px',
-                    fontSize: '0.82rem',
+                    fontSize: { xs: '0.75rem', sm: '0.82rem' },
                     fontWeight: 700,
                     display: 'flex',
                     alignItems: 'center',
@@ -295,7 +295,7 @@ export default function Hero({ onCtaClick }) {
                 sx={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(3, 1fr)',
-                  gap: 1.5,
+                  gap: { xs: 0.8, sm: 1.5 },
                   mt: 2,
                   pt: 1.5,
                   borderTop: '1px solid #F5EFE6',
@@ -303,27 +303,27 @@ export default function Hero({ onCtaClick }) {
                 }}
               >
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#FF6B35' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#FF6B35', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
                     3D 列印
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D' }}>
-                    發光城堡・柯基座
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
+                    發光城堡・自選造型座
                   </Typography>
                 </Box>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#D48806' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#D48806', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
                     Suno AI
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D' }}>
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
                     專屬原創詞曲
                   </Typography>
                 </Box>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#06C755' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#06C755', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
                     NFC 感應
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D' }}>
-                    黑膠留聲機一嗶即播
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
+                    留聲機感應即播
                   </Typography>
                 </Box>
               </Box>

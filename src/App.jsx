@@ -107,8 +107,11 @@ export default function App() {
           }}
           sx={{
             position: 'fixed',
-            bottom: { xs: 24, sm: 32 },
-            right: { xs: 20, sm: 32 },
+            bottom: { xs: 18, sm: 32 },
+            right: { xs: 16, sm: 32 },
+            width: { xs: 48, sm: 56 },
+            height: { xs: 48, sm: 56 },
+            minHeight: 0,
             backgroundColor: '#06C755',
             color: '#FFFFFF',
             zIndex: 1000,
@@ -121,7 +124,7 @@ export default function App() {
           }}
           className="pulse-line-btn"
         >
-          <ChatIcon sx={{ fontSize: 28 }} />
+          <ChatIcon sx={{ fontSize: { xs: 22, sm: 28 } }} />
         </Fab>
       </Tooltip>
     </Box>

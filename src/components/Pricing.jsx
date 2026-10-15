@@ -64,7 +64,7 @@ export default function Pricing({ onPlanSelect }) {
               lineHeight: 1.6,
             }}
           >
-            小班制滿班僅限 20 位學員，確保每位孩子獲得最高品質雙師引導。費用已內含所有 3D 列印耗材、電子發光元件、NFC 晶片與午餐點心！
+            小班制滿班僅限 20 位學員，確保每位孩子獲得最高品質雙師引導。費用已內含所有 3D 列印線材耗材、電子發光元件、NFC 晶片與完整雙師指導！
           </Typography>
         </Box>
 
@@ -73,7 +73,7 @@ export default function Pricing({ onPlanSelect }) {
           sx={{
             display: 'grid',
             gridTemplateColumns: { xs: '1fr', lg: '1fr 1.08fr 1fr' },
-            gap: { xs: 3.5, lg: 3 },
+            gap: { xs: 4, lg: 3 },
             alignItems: 'stretch',
           }}
         >
@@ -83,6 +83,7 @@ export default function Pricing({ onPlanSelect }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            style={{ paddingTop: '20px' }}
           >
             <Card
               sx={{
@@ -94,6 +95,7 @@ export default function Pricing({ onPlanSelect }) {
                 backgroundColor: '#FFFFFF',
                 border: '1px solid #EFE9E1',
                 boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+                overflow: 'visible',
               }}
             >
               <Typography variant="overline" sx={{ color: '#FF6B35', fontWeight: 800, fontSize: '0.85rem' }}>
@@ -126,7 +128,7 @@ export default function Pricing({ onPlanSelect }) {
                   <ListItemIcon sx={{ minWidth: 26, color: '#FF6B35' }}>
                     <CheckIcon fontSize="small" />
                   </ListItemIcon>
-                  <ListItemText primary="帶回超萌柯基造型手機座" primaryTypographyProps={{ fontSize: '0.92rem' }} />
+                  <ListItemText primary="帶回客製創意造型手機座（外型自由發揮設計）" primaryTypographyProps={{ fontSize: '0.92rem' }} />
                 </ListItem>
                 <ListItem disableGutters sx={{ py: 0.6 }}>
                   <ListItemIcon sx={{ minWidth: 26, color: '#FF6B35' }}>
@@ -138,7 +140,7 @@ export default function Pricing({ onPlanSelect }) {
                   <ListItemIcon sx={{ minWidth: 26, color: '#FF6B35' }}>
                     <CheckIcon fontSize="small" />
                   </ListItemIcon>
-                  <ListItemText primary="含 2 日午餐營養便當與點心" primaryTypographyProps={{ fontSize: '0.92rem' }} />
+                  <ListItemText primary="含全套 3D 列印線材與電子夜燈耗材" primaryTypographyProps={{ fontSize: '0.92rem' }} />
                 </ListItem>
               </List>
 
@@ -169,17 +171,20 @@ export default function Pricing({ onPlanSelect }) {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.55 }}
+            style={{ paddingTop: '20px' }}
           >
             <Card
               sx={{
                 height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                p: { xs: 3.5, sm: 4 },
+                p: { xs: 3, sm: 4 },
+                pt: { xs: 3.5, sm: 4.5 },
                 borderRadius: '24px',
                 backgroundColor: '#FFFFFF',
                 border: '2.5px solid #FF6B35',
                 position: 'relative',
+                overflow: 'visible',
                 boxShadow: '0 20px 48px rgba(255, 107, 53, 0.18)',
                 transform: { lg: 'scale(1.03)' },
                 zIndex: 2,
@@ -194,10 +199,10 @@ export default function Pricing({ onPlanSelect }) {
                   transform: 'translateX(-50%)',
                   backgroundColor: '#FF6B35',
                   color: '#FFFFFF',
-                  px: 2.2,
-                  py: 0.5,
+                  px: { xs: 1.8, sm: 2.2 },
+                  py: 0.6,
                   borderRadius: '16px',
-                  fontSize: '0.82rem',
+                  fontSize: { xs: '0.78rem', sm: '0.82rem' },
                   fontWeight: 800,
                   letterSpacing: '0.04em',
                   display: 'flex',
@@ -205,6 +210,7 @@ export default function Pricing({ onPlanSelect }) {
                   gap: 0.5,
                   boxShadow: '0 4px 14px rgba(255, 107, 53, 0.4)',
                   whiteSpace: 'nowrap',
+                  zIndex: 3,
                 }}
               >
                 <LocalFireDepartmentIcon sx={{ fontSize: '1rem' }} />
@@ -250,15 +256,15 @@ export default function Pricing({ onPlanSelect }) {
                   backgroundColor: '#FFF0F0',
                   border: '1px solid #FFD0D4',
                   borderRadius: '12px',
-                  p: 1.4,
+                  p: { xs: 1.2, sm: 1.4 },
                   mb: 2.5,
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 1,
+                  gap: 0.8,
                 }}
               >
-                <StarIcon sx={{ color: '#E63946', fontSize: '1.2rem' }} />
-                <Typography variant="caption" sx={{ color: '#E63946', fontWeight: 800, fontSize: '0.88rem' }}>
+                <StarIcon sx={{ color: '#E63946', fontSize: '1.2rem', flexShrink: 0 }} />
+                <Typography variant="caption" sx={{ color: '#E63946', fontWeight: 800, fontSize: { xs: '0.8rem', sm: '0.88rem' }, lineHeight: 1.35 }}>
                   ★ 搶先席位：前 5 名報名享 8 折特惠 (折後僅 $8,000)！
                 </Typography>
               </Box>
@@ -269,7 +275,7 @@ export default function Pricing({ onPlanSelect }) {
                     <CheckIcon fontSize="small" />
                   </ListItemIcon>
                   <ListItemText
-                    primary="帶走全部實體成果（城堡 + 柯基座 + 發光留聲機 + 2片唱片）"
+                    primary="帶走全部實體成果（城堡夜燈 + 客製手機座 + 發光留聲機 + 2片唱片）"
                     primaryTypographyProps={{ fontWeight: 700, fontSize: '0.92rem', color: '#1E1E24' }}
                   />
                 </ListItem>
@@ -287,7 +293,7 @@ export default function Pricing({ onPlanSelect }) {
                     <CheckIcon fontSize="small" />
                   </ListItemIcon>
                   <ListItemText
-                    primary="含五日營養午餐、每日精緻點心及專屬學習結業證書"
+                    primary="含全套高階實作耗材、教具使用及專屬學習結業證書"
                     primaryTypographyProps={{ fontWeight: 600, fontSize: '0.92rem' }}
                   />
                 </ListItem>
@@ -331,6 +337,7 @@ export default function Pricing({ onPlanSelect }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            style={{ paddingTop: '20px' }}
           >
             <Card
               sx={{
@@ -342,6 +349,7 @@ export default function Pricing({ onPlanSelect }) {
                 backgroundColor: '#FFFFFF',
                 border: '1px solid #EFE9E1',
                 boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+                overflow: 'visible',
               }}
             >
               <Typography variant="overline" sx={{ color: '#D48806', fontWeight: 800, fontSize: '0.85rem' }}>
@@ -386,7 +394,7 @@ export default function Pricing({ onPlanSelect }) {
                   <ListItemIcon sx={{ minWidth: 26, color: '#D48806' }}>
                     <CheckIcon fontSize="small" />
                   </ListItemIcon>
-                  <ListItemText primary="含 3 日午餐營養便當與點心" primaryTypographyProps={{ fontSize: '0.92rem' }} />
+                  <ListItemText primary="含 3D 列印留聲機、NFC 晶片與 AI 創作軟硬體全配" primaryTypographyProps={{ fontSize: '0.92rem' }} />
                 </ListItem>
               </List>
 
