@@ -59,7 +59,7 @@ export default function App() {
   }
 
   return (
-    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* 1. Sticky Navigation */}
       <Navbar onContactClick={() => scrollToContact()} />
 

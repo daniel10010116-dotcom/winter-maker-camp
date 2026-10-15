@@ -20,7 +20,7 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch'
 
 const navItems = [
   { label: '成果作品', href: '#modules' },
-  { label: '雙薪時程', href: '#schedule' },
+  { label: '接送時程', href: '#schedule' },
   { label: '費用方案', href: '#pricing' },
   { label: '常見問題', href: '#faq' },
 ]

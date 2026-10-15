@@ -112,52 +112,55 @@ export default function Hero({ onCtaClick }) {
             </Typography>
 
             {/* Core Badges Row */}
-            <Stack
-              direction="row"
-              flexWrap="wrap"
-              gap={1.2}
-              sx={{ mb: 4 }}
+            <Box
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: 1,
+                mb: 4,
+                width: '100%',
+              }}
             >
               <Chip
-                icon={<SchoolIcon sx={{ color: '#FF6B35 !important' }} />}
+                icon={<SchoolIcon sx={{ color: '#FF6B35 !important', fontSize: '1rem' }} />}
                 label="小一 至 國二"
                 sx={{
                   backgroundColor: '#FFFFFF',
                   color: '#1E1E24',
                   fontWeight: 700,
-                  fontSize: '0.88rem',
-                  py: 2,
+                  fontSize: { xs: '0.8rem', sm: '0.88rem' },
+                  py: 1.8,
                   boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                   border: '1px solid #EFE9E1',
                 }}
               />
               <Chip
-                icon={<PeopleAltIcon sx={{ color: '#FF6B35 !important' }} />}
+                icon={<PeopleAltIcon sx={{ color: '#FF6B35 !important', fontSize: '1rem' }} />}
                 label="限額 20 人滿班｜雙師親授"
                 sx={{
                   backgroundColor: '#FFFFFF',
                   color: '#1E1E24',
                   fontWeight: 700,
-                  fontSize: '0.88rem',
-                  py: 2,
+                  fontSize: { xs: '0.8rem', sm: '0.88rem' },
+                  py: 1.8,
                   boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                   border: '1px solid #EFE9E1',
                 }}
               />
               <Chip
-                icon={<LocationOnIcon sx={{ color: '#FF6B35 !important' }} />}
+                icon={<LocationOnIcon sx={{ color: '#FF6B35 !important', fontSize: '1rem' }} />}
                 label="圓山捷運站步行 7 分"
                 sx={{
                   backgroundColor: '#FFFFFF',
                   color: '#1E1E24',
                   fontWeight: 700,
-                  fontSize: '0.88rem',
-                  py: 2,
+                  fontSize: { xs: '0.8rem', sm: '0.88rem' },
+                  py: 1.8,
                   boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                   border: '1px solid #EFE9E1',
                 }}
               />
-            </Stack>
+            </Box>
 
             {/* Dual CTAs */}
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ alignItems: { xs: 'stretch', sm: 'center' } }}>
@@ -209,12 +212,33 @@ export default function Hero({ onCtaClick }) {
             </Stack>
 
             {/* Quick trust note */}
-            <Typography
-              variant="caption"
-              sx={{ display: 'block', mt: 2, color: '#6C757D', fontSize: '0.82rem' }}
+            <Box
+              sx={{
+                mt: 2.2,
+                display: 'flex',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                gap: 0.8,
+              }}
             >
-              ⚡ 前 5 名報名享 8 折特惠 ｜ 雙薪家長 08:00~18:00 超彈性接送
-            </Typography>
+              <Chip
+                size="small"
+                label="⚡ 前 5 名享 8 折特惠"
+                sx={{
+                  backgroundColor: '#FFF0F0',
+                  color: '#E63946',
+                  fontWeight: 800,
+                  fontSize: '0.78rem',
+                  border: '1px solid #FFD0D4',
+                }}
+              />
+              <Typography
+                variant="caption"
+                sx={{ color: '#6C757D', fontSize: { xs: '0.8rem', sm: '0.85rem' }, fontWeight: 600 }}
+              >
+                08:00~18:00 彈性接送（免收延托費）
+              </Typography>
+            </Box>
           </motion.div>
 
           {/* Right Column: Hero Image Showcase Card */}
@@ -222,6 +246,7 @@ export default function Hero({ onCtaClick }) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
+            style={{ width: '100%', maxWidth: '100%' }}
           >
             <Box
               sx={{
@@ -231,7 +256,9 @@ export default function Hero({ onCtaClick }) {
                 backgroundColor: '#FFFFFF',
                 boxShadow: '0 20px 45px rgba(30, 30, 36, 0.12)',
                 border: '1px solid rgba(255, 255, 255, 0.8)',
-                p: { xs: 1.5, sm: 2 },
+                p: { xs: 1.2, sm: 2 },
+                width: '100%',
+                boxSizing: 'border-box',
               }}
             >
               {/* Image Container with subtle zoom on hover */}
@@ -295,35 +322,36 @@ export default function Hero({ onCtaClick }) {
                 sx={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(3, 1fr)',
-                  gap: { xs: 0.8, sm: 1.5 },
+                  gap: { xs: 0.5, sm: 1.5 },
                   mt: 2,
                   pt: 1.5,
                   borderTop: '1px solid #F5EFE6',
                   textAlign: 'center',
+                  width: '100%',
                 }}
               >
-                <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#FF6B35', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
+                <Box sx={{ minWidth: 0, overflow: 'hidden' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#FF6B35', fontSize: { xs: '0.8rem', sm: '0.9rem' } }}>
                     3D 列印
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
-                    發光城堡・自選造型座
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.68rem', sm: '0.78rem' }, display: 'block', mt: 0.3, lineHeight: 1.25 }}>
+                    城堡・自選座
                   </Typography>
                 </Box>
-                <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#D48806', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
+                <Box sx={{ minWidth: 0, overflow: 'hidden' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#D48806', fontSize: { xs: '0.8rem', sm: '0.9rem' } }}>
                     Suno AI
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.68rem', sm: '0.78rem' }, display: 'block', mt: 0.3, lineHeight: 1.25 }}>
                     專屬原創詞曲
                   </Typography>
                 </Box>
-                <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#06C755', fontSize: { xs: '0.82rem', sm: '0.9rem' } }}>
+                <Box sx={{ minWidth: 0, overflow: 'hidden' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 800, color: '#06C755', fontSize: { xs: '0.8rem', sm: '0.9rem' } }}>
                     NFC 感應
                   </Typography>
-                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.72rem', sm: '0.78rem' }, display: 'block', mt: 0.3 }}>
-                    留聲機感應即播
+                  <Typography variant="caption" sx={{ color: '#6C757D', fontSize: { xs: '0.68rem', sm: '0.78rem' }, display: 'block', mt: 0.3, lineHeight: 1.25 }}>
+                    留聲機即嗶即播
                   </Typography>
                 </Box>
               </Box>

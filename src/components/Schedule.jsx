@@ -12,8 +12,8 @@ const scheduleItems = [
   {
     time: '08:00 - 09:00',
     title: '晨間彈性報到',
-    tag: '上班免趕路',
-    desc: '家長上班前即可安心送達。現場有助教老師溫馨陪伴、提供晨間趣味積木與繪本暖身。',
+    tag: '提早送達免趕路',
+    desc: '早上 8:00 起即可安心送達。現場有助教老師溫馨陪伴、提供晨間趣味積木與繪本暖身。',
     icon: <WbSunnyOutlinedIcon sx={{ fontSize: 32, color: '#FFB703' }} />,
     color: '#FFB703',
   },
@@ -29,7 +29,7 @@ const scheduleItems = [
     time: '17:00 - 18:00',
     title: '課後彈性接送',
     tag: '免收延托費',
-    desc: '最貼心的下班接送緩衝期！孩子能在教室安全複習或自由創作，家長下班接送不再焦慮。',
+    desc: '最貼心的課後接送緩衝期！孩子能在教室安全複習或自由創作，接送時間超寬裕、免加收延托費。',
     icon: <NightsStayOutlinedIcon sx={{ fontSize: 32, color: '#5C6BC0' }} />,
     color: '#5C6BC0',
   },
@@ -49,7 +49,7 @@ export default function Schedule() {
         <Box sx={{ textAlign: 'center', mb: { xs: 5, md: 7 } }}>
           <Chip
             icon={<FamilyRestroomIcon sx={{ fontSize: '1.1rem !important', color: '#FF6B35 !important' }} />}
-            label="PARENT-FRIENDLY SCHEDULE"
+            label="FLEXIBLE TIMING"
             sx={{
               backgroundColor: '#FFE8CC',
               color: '#D94E1B',
@@ -71,7 +71,7 @@ export default function Schedule() {
               letterSpacing: '-0.02em',
             }}
           >
-            專為雙薪家庭打造：超彈性接送時段
+            貼心超彈性接送：08:00 可送達、18:00 前皆可接回
           </Typography>
           <Typography
             variant="body1"
@@ -82,7 +82,7 @@ export default function Schedule() {
               mx: 'auto',
             }}
           >
-            早上 8:00 就能送達、下午最晚 18:00 接回，整整 10 小時充實學習與完善看護，不加收延托費，讓雙薪爸媽上下班從容不迫！
+            早上 8:00 起就能送達、下午最晚 18:00 前皆可接回，整整 10 小時充實學習與完善看護，不加收延托費，接送時間充裕從容無負擔！
           </Typography>
         </Box>
 
