@@ -130,23 +130,6 @@ export default function ModuleShowcase({ onModuleSelect }) {
                     fontSize: '0.8rem',
                   }}
                 />
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    bottom: 16,
-                    right: 16,
-                    backgroundColor: '#FF6B35',
-                    color: '#fff',
-                    px: 1.8,
-                    py: 0.6,
-                    borderRadius: '20px',
-                    fontWeight: 800,
-                    fontSize: '0.9rem',
-                    boxShadow: '0 4px 12px rgba(255, 107, 53, 0.4)',
-                  }}
-                >
-                  單報 NT$ 6,000
-                </Box>
               </Box>
 
               <CardContent sx={{ p: { xs: 2.8, sm: 3.8 }, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
@@ -296,23 +279,6 @@ export default function ModuleShowcase({ onModuleSelect }) {
                     fontSize: '0.8rem',
                   }}
                 />
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    bottom: 16,
-                    right: 16,
-                    backgroundColor: '#D48806',
-                    color: '#fff',
-                    px: 1.8,
-                    py: 0.6,
-                    borderRadius: '20px',
-                    fontWeight: 800,
-                    fontSize: '0.9rem',
-                    boxShadow: '0 4px 12px rgba(212, 136, 6, 0.4)',
-                  }}
-                >
-                  單報 NT$ 8,000
-                </Box>
               </Box>
 
               <CardContent sx={{ p: { xs: 3, sm: 3.8 }, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
