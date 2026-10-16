@@ -36,7 +36,7 @@ export default function Footer() {
               © 2027 新星創客冬令營 All Rights Reserved. ｜ 教室地點：台北市圓山捷運站旁教室
             </Typography>
             <Typography variant="caption" sx={{ display: 'block', mt: 0.5, color: '#6C757D' }}>
-              小一至國二 ｜ 限額 20 人滿班 ｜ 雙師親授 ｜ 諮詢 LINE ID：ddchen0116
+              小一至國二 ｜ 限額 20 人滿班 ｜ 精緻小班制 ｜ 諮詢 LINE ID：ddchen0116
             </Typography>
           </Box>
 

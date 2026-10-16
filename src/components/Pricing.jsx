@@ -64,7 +64,7 @@ export default function Pricing({ onPlanSelect }) {
               lineHeight: 1.6,
             }}
           >
-            小班制滿班僅限 20 位學員，確保每位孩子獲得最高品質雙師引導。費用已內含所有 3D 列印線材耗材、電子發光元件、NFC 晶片與完整雙師指導！
+            小班制滿班僅限 20 位學員，確保每位孩子獲得最高品質教學引導。費用已內含所有 3D 列印線材耗材、電子發光元件、NFC 晶片與完整小班制細緻指導！
           </Typography>
         </Box>
 
@@ -240,11 +240,26 @@ export default function Pricing({ onPlanSelect }) {
                 >
                   原價 NT$ 13,000
                 </Typography>
-                <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1 }}>
-                  <Typography variant="h3" sx={{ fontWeight: 900, color: '#FF6B35', fontSize: '2.5rem' }}>
+                <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1, flexWrap: 'wrap' }}>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontWeight: 900,
+                      color: '#FF6B35',
+                      fontSize: { xs: '1.95rem', sm: '2.15rem', md: '2.3rem' },
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
                     NT$ 10,000
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#D94E1B', fontWeight: 800 }}>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      color: '#D94E1B',
+                      fontWeight: 800,
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
                     12/1 前早鳥特惠
                   </Typography>
                 </Box>

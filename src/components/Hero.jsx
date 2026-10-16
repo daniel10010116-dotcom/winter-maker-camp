@@ -136,7 +136,7 @@ export default function Hero({ onCtaClick }) {
               />
               <Chip
                 icon={<PeopleAltIcon sx={{ color: '#FF6B35 !important', fontSize: '1rem' }} />}
-                label="限額 20 人滿班｜雙師親授"
+                label="限額 20 人滿班｜精緻小班制"
                 sx={{
                   backgroundColor: '#FFFFFF',
                   color: '#1E1E24',

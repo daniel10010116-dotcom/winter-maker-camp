@@ -147,7 +147,7 @@ export default function ModuleShowcase({ onModuleSelect }) {
                   3D 列印生活設計
                 </Typography>
                 <Typography variant="body2" sx={{ color: '#4A4E69', mb: 2, lineHeight: 1.65 }}>
-                  從空間立體觀念起步，學習直覺圖形化建模軟體、參數化結構與 3D 列印切片機操作。雙師帶領孩子掌握空間思維，將天馬行空的想像透過數位製造真正實體化！
+                  從空間立體觀念起步，學習直覺圖形化建模軟體、參數化結構與 3D 列印切片機操作。小班制帶領孩子掌握空間思維，將天馬行空的想像透過數位製造真正實體化！
                 </Typography>
 
                 {/* Highlights Box */}

@@ -21,7 +21,7 @@ const scheduleItems = [
     time: '09:00 - 17:00',
     title: '創客科技核心課程',
     tag: '實體動手做',
-    desc: '中午適度休息放鬆。雙師親授手把手帶領 3D 建模、AI 音樂調校與硬體組裝。',
+    desc: '中午適度休息放鬆。小班制手把手帶領 3D 建模、AI 音樂調校與硬體組裝。',
     icon: <PrecisionManufacturingIcon sx={{ fontSize: 32, color: '#FF6B35' }} />,
     color: '#FF6B35',
   },
